@@ -1,0 +1,27 @@
+{
+  "name": "googlecanonical",
+  "version": "1.0.0",
+  "description": "Google Canonical fixer",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeGitHubDeTai/GoogleCanonical.git"
+  },
+  "keywords": [
+    "google",
+    "canonical",
+    "fixer"
+  ],
+  "author": "Tai Tetsuyuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeGitHubDeTai/GoogleCanonical/issues"
+  },
+  "homepage": "https://github.com/LeGitHubDeTai/GoogleCanonical#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
