@@ -38,7 +38,7 @@ function normalizeURL(url) {
 
 function addCanonicalLinkToHTML(filePath) {
     const fileContents = fs.readFileSync(filePath, 'utf-8');
-    const pageURL = `${normalizeURL(SITE_URL)}${filePath.replace(`${IN_DIRECTORY}\\`, '')}`;
+    const pageURL = `${normalizeURL(SITE_URL)}${filePath.replace(`${IN_DIRECTORY}\\`, '').replace(`${IN_DIRECTORY}/`, '')}`;
     const canonicalLink = `<link rel="canonical" href="${normalizeURL(pageURL)}" />`;
     const updatedContents = fileContents.replace('</head>', `${canonicalLink}\n</head>`);
     fs.writeFileSync(filePath, updatedContents);
